@@ -19,4 +19,5 @@ yarn add swagger
 yarn add redis
 yarn add jwt
 yarn add aws-lambda
+yarn add jest
 ```
