@@ -8,4 +8,3 @@ const getItem = (req, reply) => {
   reply.send(item);
 };
 module.exports = { getItems, getItem };
-  

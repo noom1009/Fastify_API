@@ -3,4 +3,4 @@ GET http://localhost:3000 HTTP/1.1
 ### Get All Items
 GET http://localhost:3000/items HTTP/1.1
 ### Get Items By ID
-GET http://localhost:3000/items/1 HTTP/1.1
+GET http://localhost:3000/items/4 HTTP/1.1

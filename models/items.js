@@ -1,8 +1,9 @@
+const { getItems, getItem } = require('../controllers/items');
 const Item ={
     type:'object',
     properties:{
-        id: { type: 'number'},
-        name: {type: 'String'}
+        id: { type: "number" },
+        name: { type: "string" },
     }
 }
 const getItemsOpts = {
@@ -14,9 +15,7 @@ const getItemsOpts = {
             }
         }
     },
-    handler: function (req, reply) {
-        reply.send(items);
-    },
+    handler: getItems,
 }
 
 
@@ -26,10 +25,7 @@ const getItemOpts = {
             200: Item,
         }
     },
-    handler: function (req, reply) {
-      const { id } = req.params
-      const item = items.find((item) => item.id === id)
-    },
+    handler: getItem,
 }
 
-module.exports = getItemsOpts , getItemOpts ;
+module.exports = {getItemsOpts , getItemOpts} ;
