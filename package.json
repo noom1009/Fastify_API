@@ -21,8 +21,14 @@
   "homepage": "https://github.com/noom1009/Fastify_API#readme",
   "dependencies": {
     "aws-lambda-fastify": "^1.7.1",
+    "dotenv": "^10.0.0",
     "fastify": "^3.24.1",
     "fastify-swagger": "^4.12.6",
+    "jest": "^27.4.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.15",
+    "pg": "^8.7.1",
     "uuid": "^8.3.2"
   }
 }
