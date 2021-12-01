@@ -1,0 +1,13 @@
+@startuml
+
+title "Survey Audit"
+
+actor User
+User -> Template : Create Template
+Template -> Question_group : สร้าง Survey
+Question_group -> Question_stting : กำหนด survey
+Question -> choices : กำหนด question กับรูปแบบคำถาม
+choices -> choices_setting : ผูกรายละเอียดระหว่างคำถามกับ Template
+choices_setting -> Prefersurvey : assign survey in user
+database Survey
+@enduml

@@ -1,0 +1,13 @@
+@startuml
+
+title "Survey Audit"
+
+actor User
+User -> Plan : กำหนดแผน
+Plan -> PlanDetail : ลงรายละเอียดร้าน
+PlanDetail -> RoutePeriod : กำหนดวันเวลาเข้า survey
+RoutePeriod -> Route : assign user to plan
+Route -> RouteDetail : ผูกรายละเอียดแผนกับร้านค้ากับวันเวลาคน survey
+RouteDetail -> Audit : Save
+database Audit
+@enduml
